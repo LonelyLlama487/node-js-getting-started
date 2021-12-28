@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Google CDN Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|Roboto">
+
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="./js_assets/style.css">
+    <link rel="stylesheet" href="./../../public/stylesheets/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+    <script src="./../../js_assets/autotyping.min.js"></script>
+    <script src="./../../portfolio_renderer.js"></script>
+
+    <title>Fun Site</title>
+</head>
+
+<body style="background-color: lightgrey" onload="callInit()">
+
+
+    <nav id="navbar-example2" class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="./../../public/salesforce-2.svg" width="40" height="40" class="d-inline-block align-top"
+                alt="sf_icon.svg">
+            _prof_name_
+        </a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#workex">Work Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contactinfo">Contact me?</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- card body-->
+
+    <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+        <!--About Section-->
+        <div id="about" class="jumbotron">
+            <div class="container mb-auto text-center text-lg-left">
+
+                <div class="row">
+                    <div class="col-lg-4 align-items-center d-flex">
+                        <img src="./../../public/profile_png.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg-8">
+                        <h1 class="display-4 hearder-name-class">Soomjeet Sahoo</h1><span
+                            class="auto-type-profiles"></span>|
+                        <br /><br />
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea corporis nulla
+                            quisquam ad quae itaque ut at iure illum amet tempore libero officiis vitae debitis, officia
+                            soluta, neque sequi inventore!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- WorkExp Section-->
+        <div id="workex" class="jumbotron">
+            <h1 class="work-ex-style pb-4">Work Experience</h1>
+            <div class="container container-fluid">
+                <!--loopOver-WorkEx-->
+                <div class="row">
+                    <div class="col flex-basis card">
+                        <div class="card-body">
+                            <h5 class="card-title"><img src="./../../public/salesforce-2.svg" width="40" height="40"
+                                    class="d-inline-block align-top" alt="sf_icon.svg"><span class="mx-auto">Card
+                                    title-1</span></h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle-1</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--End:loopOver-WorkEx-->
+            </div>
+        </div>
+
+        <!-- ContactMe Section-->
+        <div id="contactinfo" class="jumbotron">
+            <h1 class="work-ex-style pb-4">Contact Info</h1>
+            <div class="container container-fluid" style="justify-content: center !important;">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        const exampleText = ['Salesforce Developer ☁', 'Python Automation </>', 'JavaScript Guy💻', 'Integrations ❤'];
+        const exampleTyping = new AutoTyping('.auto-type-profiles', exampleText, {
+            typeSpeed: 50,
+            deleteSpeed: 50,
+            waitBeforeDelete: 2000,
+            waitBetweenWords: 500,
+        });
+        exampleTyping.start()
+    </script>
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>

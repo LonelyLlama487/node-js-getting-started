@@ -1,0 +1,22 @@
+.img-icon-class{
+    /* border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%; */
+    border-radius: 50%;
+}
+
+  .auto-type-profiles{
+    font-family: "Roboto", sans-serif;
+  }
+
+  .hearder-name-class{
+    font-family: "Trirong", serif;
+    /*font-size: 30px;*/
+    text-shadow: 3px 3px 3px #ababab;
+  }
+
+  .work-ex-style{
+    font-family: "Roboto", sans-serif;
+    text-align:center;
+}
